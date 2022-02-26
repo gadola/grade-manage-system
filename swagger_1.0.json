@@ -1,0 +1,70 @@
+{
+  "openapi": "3.0.2",
+  "info": {
+    "title": "JSONPlaceholder",
+    "description": "Fake Online REST API for Testing and Prototyping",
+    "version": "0.0.1"
+  },
+  "paths": {
+    "/posts": {
+      "get": {
+        "description": "List all posts",
+        "responses": {
+          "200": {
+            "description": "{message: 'Thành công!'}",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "student": {
+                        "type": "object"
+                      },
+                      "teacher": {
+                        "type": "object"
+                      },
+                      "class": {
+                        "type": "object"
+                      },
+                      "assignemt": {
+                        "type": "object"
+                      },
+                      "complete": {
+                        "type": "boolean"
+                      },
+                      "comments": {
+                        "type": "array",
+                        "name": "hoàng nam",
+                        "content": "this is test",
+                        "createAt": "Sun Jan 09 2022 15:07:29 GMT+0700"
+                      }
+                    },
+                    "examples": {
+                      "student": "ObjectId()",
+                      "teacher": "ObjectId()",
+                      "class": "ObjectId()",
+                      "assignment": "ObjectId()",
+                      "complete": true,
+                      "comments": [
+                        {
+                          "name": "Hoàng Nam",
+                          "content": "this is test",
+                          "createAt": "Sun Jan 09 2022 15:07:29 GMT+0700"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "{ message: 'Có lỗi xảy ra!', error }"
+          }
+        }
+      }
+    }
+  }
+}
