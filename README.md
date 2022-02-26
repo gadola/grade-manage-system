@@ -1,6 +1,6 @@
 # Grade Management System
 
-Source code: [Github](https://github.com/facebook/create-react-app)
+Link demo: [Grade management system](https://github.com/NguyenTheLuan/Grade_Managament_System)
 
 ## Miêu tả hệ thống
 
